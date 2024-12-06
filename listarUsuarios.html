@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/search.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="css/tabela.css">
 </head>
 
 <body>
@@ -23,13 +23,10 @@
         </div>
     </section>    
 
-
-
-
-
-    <body>
+    <section>
         <h3>CLIENTES CADASTRADOS</h3>
 
+        <!-- Caixa de pesquisa -->
         <div class="search-box">
             <form action="">
                 <button type="submit"><i class='bx bx-search'></i></button>
@@ -37,31 +34,59 @@
             </form>
         </div>
 
-        <form method="POST">
-            <input type="text" name="nome" id="nome">
-            <input type="text" name="cpf" id="cpf">
-            <input type="text" name="email" id="email">
+        <!-- Formulário para cadastro de novo cliente -->
+        <!-- <form method="POST">
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="text" name="cpf" id="cpf" placeholder="CPF">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+            <input type="text" name="cep" id="cep" placeholder="CEP">
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+            <input type="text" name="estado" id="estado" placeholder="Estado">
             <input type="submit" name="cadastrar" value="Cadastrar">
-        </form>
+        </form> -->
 
- 
+        <!-- Tabela para listar clientes cadastrados -->
         <table>
-            <tr>
-                <td>CPF</td>
-                <td>NOME</td>
-                <td>E-MAIL</td>
-                <td>TELEFONE</td>
-                <td>ENDEREÇO</td>
-                <td>CEP</td>
-                <td>BAIRRO</td>
-                <td>ESTADO</td>
-            </tr>
-            </table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>CEP</th>
+                    <th>Bairro</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui os dados dos usuários serão listados -->
+                <tr>
+                    <td>123.456.789-00</td>
+                    <td>João Silva</td>
+                    <td>joao.silva@email.com</td>
+                    <td>(11) 98765-4321</td>
+                    <td>Rua Exemplo, 123</td>
+                    <td>12345-678</td>
+                    <td>Centro</td>
+                    <td>SP</td>
+                </tr>
+                <tr>
+                    <td>987.654.321-00</td>
+                    <td>Ana Costa</td>
+                    <td>ana.costa@email.com</td>
+                    <td>(21) 99876-5432</td>
+                    <td>Avenida Teste, 456</td>
+                    <td>87654-321</td>
+                    <td>Jardim</td>
+                    <td>RJ</td>
+                </tr>
+                <!-- Adicione outros usuários conforme necessário -->
+            </tbody>
+        </table>
+    </section>
 
-    </body>
-
-
-
-
+</body>
 </html>
-

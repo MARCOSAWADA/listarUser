@@ -8,56 +8,46 @@ body {
     background-color: rgb(247, 247, 247);
 }
 
-
 header .search-box {
     flex: 1;
-    position: relative;/
+    position: relative;
 }
 
-.search-box form { 
+.search-box form {
     display: flex;
     align-items: center;
-    width: 10%;
-    border-radius: 5px; /* Arredonda a borda do form */
-    overflow: hidden; /* Garante que os filhos se ajustem ao border-radius */
-    background-color: #391111; /* Cor de fundo do form */
-    border: none; /* Garante que não haja borda visível */
+    width: 198px; /* Largura do box de pesquisa */
+    height: 40px; /* Altura do box de pesquisa */
+    border-radius: 50px; /* Borda arredondada */
+    overflow: hidden;
+    background-color: #fff; /* Fundo claro */
+    border: 1px solid #ccc; /* Borda suave */
 }
 
-.search-box input { 
-    border-radius: 5px; /* Arredonda a borda do campo de entrada */
-    border: none; /* Remove a borda do input */
-    padding: 5px; /* Ajuste o espaçamento interno, se necessário */
-    background-color: #ffffff; /* Cor de fundo do input */
-}
-
-.search-box button { /*posição do bottom ao clicar na lupa*/
-    border: none; 
-    background: transparent; 
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 10px; 
-    height: 3%;
-    margin-top: 11.9px;
-}
-
-.search-box button i { /*ícone da lupa*/
-    font-size: 17px;
-    color: gray;
-}
-
-.search-box input { /*letra do buscar*/
+.search-box input {
     flex: 1;
-    height: 50px;
-    border: none; 
-    outline: none; 
+    height: 100%; /* O input ocupa toda a altura do form */
+    border: none;
+    outline: none;
     background: #f2f2f2;
-    border-radius: 5px;
     color: gray;
-    font-size: 15px;
-    padding: 0 40px 0 40px; 
-    margin-top: 10px;
+    font-size: 14px; /* Ajuste da fonte para caber melhor */
+    padding: 0 30px; /* Ajuste o preenchimento para dar espaço à lupa */
 }
 
+.search-box button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 10px; /* Posição da lupa dentro do box */
+    height: 100%; /* O botão ocupa toda a altura do form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box button i {
+    font-size: 18px; /* Tamanho do ícone da lupa */
+    color: gray;
+}
