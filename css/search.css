@@ -17,7 +17,7 @@ header .search-box {
 .search-box form { 
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 10%;
     border-radius: 5px; /* Arredonda a borda do form */
     overflow: hidden; /* Garante que os filhos se ajustem ao border-radius */
     background-color: #391111; /* Cor de fundo do form */
