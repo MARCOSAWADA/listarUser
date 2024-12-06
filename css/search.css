@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+
+header .search-box {
+    flex: 1;
+    position: relative;/
+}
+
+.search-box form { 
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px; /* Arredonda a borda do form */
+    overflow: hidden; /* Garante que os filhos se ajustem ao border-radius */
+    background-color: #391111; /* Cor de fundo do form */
+    border: none; /* Garante que não haja borda visível */
+}
+
+.search-box input { 
+    border-radius: 5px; /* Arredonda a borda do campo de entrada */
+    border: none; /* Remove a borda do input */
+    padding: 5px; /* Ajuste o espaçamento interno, se necessário */
+    background-color: #ffffff; /* Cor de fundo do input */
+}
+
+.search-box button { /*posição do bottom ao clicar na lupa*/
+    border: none; 
+    background: transparent; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px; 
+    height: 3%;
+    margin-top: 11.9px;
+}
+
+.search-box button i { /*ícone da lupa*/
+    font-size: 17px;
+    color: gray;
+}
+
+.search-box input { /*letra do buscar*/
+    flex: 1;
+    height: 50px;
+    border: none; 
+    outline: none; 
+    background: #f2f2f2;
+    border-radius: 5px;
+    color: gray;
+    font-size: 15px;
+    padding: 0 40px 0 40px; 
+    margin-top: 10px;
+}
+
