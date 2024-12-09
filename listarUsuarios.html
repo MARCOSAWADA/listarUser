@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/search.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -30,7 +33,8 @@
         <div class="search-box">
             <form action="">
                 <button type="submit"><i class='bx bx-search'></i></button>
-                <input type="text" name="search" class="srch" placeholder="Buscar">
+                <input type="text" name="search" class="srch" placeholder= "Buscar">
+                
             </form>
         </div>
 
@@ -48,6 +52,7 @@
         </form> -->
 
         <!-- Tabela para listar clientes cadastrados -->
+    <div class="container">    
         <table>
             <thead>
                 <tr>
@@ -59,6 +64,7 @@
                     <th>CEP</th>
                     <th>Bairro</th>
                     <th>Estado</th>
+                    <th>Alterar</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,6 +78,7 @@
                     <td>12345-678</td>
                     <td>Centro</td>
                     <td>SP</td>
+                    <td> <i class="fa-solid fa-user-pen"></i>  <i class="fa-solid fa-trash"></i>
                 </tr>
                 <tr>
                     <td>987.654.321-00</td>
@@ -82,10 +89,12 @@
                     <td>87654-321</td>
                     <td>Jardim</td>
                     <td>RJ</td>
+                    <td> <i class="fa-solid fa-user-pen"></i>  <i class="fa-solid fa-trash"></i>
                 </tr>
                 <!-- Adicione outros usuários conforme necessário -->
             </tbody>
         </table>
+    </div>
     </section>
 
 </body>
