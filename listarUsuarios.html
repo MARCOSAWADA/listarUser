@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAR USUÁRIOS</title>
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/search2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/tabela.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,27 +30,19 @@
     <section>
         <h3>CLIENTES CADASTRADOS</h3>
 
-        <!-- Caixa de pesquisa -->
+
         <div class="search-box">
-            <form action="">
-                <button type="submit"><i class='bx bx-search'></i></button>
-                <input type="text" name="search" class="srch" placeholder= "Buscar">
-                
+            <form action="" onsubmit="event.preventDefault(); filterTable();">
+                <div class="search-container">
+                    <button type="submit" class="search-btn">
+                        <i class="bx bx-search"></i> <!-- Ícone da lupa -->
+                    </button>
+                    <input type="text" id="searchInput" class="srch" placeholder="Buscar">
+                </div>
             </form>
         </div>
-
-        <!-- Formulário para cadastro de novo cliente -->
-        <!-- <form method="POST">
-            <input type="text" name="nome" id="nome" placeholder="Nome">
-            <input type="text" name="cpf" id="cpf" placeholder="CPF">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <input type="text" name="telefone" id="telefone" placeholder="Telefone">
-            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
-            <input type="text" name="cep" id="cep" placeholder="CEP">
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
-            <input type="text" name="estado" id="estado" placeholder="Estado">
-            <input type="submit" name="cadastrar" value="Cadastrar">
-        </form> -->
+        
+        
 
         <!-- Tabela para listar clientes cadastrados -->
     <div class="container">    
@@ -78,7 +71,14 @@
                     <td>12345-678</td>
                     <td>Centro</td>
                     <td>SP</td>
-                    <td> <i class="fa-solid fa-user-pen"></i>  <i class="fa-solid fa-trash"></i>
+                    <td>
+                        <button class="edit-btn">
+                            <img src="edit-3.png" alt="Editar" class="edit-icon">
+                        </button>
+                        <button class="delete-btn">
+                            <img src="trash-2.png" alt="Excluir" class="delete-icon">
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>987.654.321-00</td>
@@ -89,7 +89,14 @@
                     <td>87654-321</td>
                     <td>Jardim</td>
                     <td>RJ</td>
-                    <td> <i class="fa-solid fa-user-pen"></i>  <i class="fa-solid fa-trash"></i>
+                    <td>
+                        <button class="edit-btn">
+                            <img src="edit-3.png" alt="Editar" class="edit-icon">
+                        </button>
+                        <button class="delete-btn">
+                            <img src="trash-2.png" alt="Excluir" class="delete-icon">
+                        </button>
+                    </td>
                 </tr>
                 <!-- Adicione outros usuários conforme necessário -->
             </tbody>

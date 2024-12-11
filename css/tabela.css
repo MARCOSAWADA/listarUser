@@ -3,42 +3,121 @@
     display: flex;
     justify-content: center;
     margin-left: 270px;
+    overflow-x: auto; 
 }
 
 h3{
     margin-left: 270px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #828282;
 }
-/* Estilos para a tabela */
+
+
+thead {
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para o cabeçalho */
+    color: #828282;
+}
+
+th {
+    background-color: #D4E3FF; 
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     display: table-cell;
-
+    font-family: 'Poppins', sans-serif;
+    min-width: 600px; /* Garante que a tabela tenha um mínimo de largura para não se deformar */
 }
 
-th {
-    background-color: #D4E3FF; /* Cor do fundo do cabeçalho da tabela */
-    padding: 12px 15px;
-    text-align: left;
-    font-weight: bold;
-}
-
-td {
+td { /* Dentro da célula da tabela */
     padding: 10px 15px;
     border: 1px solid #ddd;
+
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2; /* Cor para as linhas pares */
+table th, table td {
+    border: 1px solid transparent;
 }
+
+
+/* botões editar e excluir */
+
+/*botão de editar */
+.edit-btn {
+    background-color:transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 8px; 
+}
+.edit-icon {
+    width: 20px; 
+    height: 20px; 
+    transition: transform 0.3s;
+}
+
+/*botão de excluir */
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 8px;
+}
+.delete-icon {
+    width: 20px;
+    height: 20px; 
+    transition: transform 0.3s; 
+}
+
+
+.edit-icon:hover {
+    transform: scale(1.2);
+}
+.delete-icon:hover {
+    transform: scale(1.2); 
+}
+
 
 tr:hover {
-    background-color: #e9e9e9; /* Cor para linha quando passar o mouse */
+    background-color: #e9e9e9;
 }
 
-/* Adiciona espaçamento entre as colunas e a borda */
-table th, table td {
-    border: 1px solid #ddd;
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0; 
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        min-width: 400px; 
+    }
+
+    th, td {
+        font-size: 12px; 
+        padding: 8px 10px; /
+    }
+
+    
+    th, td {
+        word-wrap: break-word; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
 }
