@@ -4,56 +4,67 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(247, 247, 247);
+
+.listarU-search-box {
+    margin: 50px 0 0 280px; 
+    display: inline-block;
 }
 
-header .search-box {
-    flex: 1;
-    position: relative;
+.listarU-search-container {
+    position: relative; 
+    display: inline-block;
 }
 
-.search-box{
-    display: flex;
-    justify-content: center;
-    margin-right: 750px;
+.listarU-srch {
+    padding: 10px 10px 10px 40px; 
+    font-size: 14px;
+    width: 198px; 
+    height: 40px; 
+    border: 2px solid #E5E5E5;
+    border-radius: 100px; 
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
 }
 
-.search-box form {
-    display: flex;
-    align-items: center;
-    width: 198px; /* Largura do box de pesquisa */
-    height: 40px; /* Altura do box de pesquisa */
-    border-radius: 50px; /* Borda arredondada */
-    overflow: hidden;
-    background-color: #fff; /* Fundo claro */
-    border: 1px solid #ccc; /* Borda suave */
-}
 
-.search-box input {
-    flex: 1;
-    height: 100%; /* O input ocupa toda a altura do form */
-    border: none;
-    outline: none;
-    background: #f2f2f2;
-    color: gray;
-    font-size: 14px; /* Ajuste da fonte para caber melhor */
-    padding: 0 30px; /* Ajuste o preenchimento para dar espaço à lupa */
-}
-
-.search-box button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
+.listarU-search-icon {
     position: absolute;
-    left: 300px; /* Posição da lupa dentro do box */
-    height: 100%; /* O botão ocupa toda a altura do form */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%); 
+    font-size: 18px;
+    color: #828282;
+    transition: color 0.3s ease; 
 }
 
-.search-box button i {
-    font-size: 18px; /* Tamanho do ícone da lupa */
-    color: gray;
+
+.listarU-srch:focus {
+    border-color: black; 
+    outline: none;
 }
+
+
+.listarU-search-btn {
+    position: absolute;
+    top: 50%;
+    right: 165px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+.listarU-search-btn i {
+    font-size: 18px;
+    color: #828282;
+    transition: color 0.3s ease;
+}
+
+
+.listarU-search-icon:hover, .listarU-search-btn i:hover {
+    color: black;
+    transform: scale(1.2);
+}
+

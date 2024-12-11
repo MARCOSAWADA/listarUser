@@ -1,16 +1,17 @@
 
-.container{
+.listarU-container{
     display: flex;
     justify-content: center;
     margin-left: 270px;
     overflow-x: auto; 
 }
 
-h3{
+.listarU-titulo h3{
     margin-left: 270px;
     font-family: 'Montserrat', sans-serif; 
     color: #828282;
 }
+
 
 
 thead {
@@ -48,7 +49,7 @@ table th, table td {
 /* botões editar e excluir */
 
 /*botão de editar */
-.edit-btn {
+.listarU-edit-btn {
     background-color:transparent;
     border: none;
     padding: 5px 10px;
@@ -60,14 +61,14 @@ table th, table td {
     justify-content: flex-start; 
     gap: 8px; 
 }
-.edit-icon {
+.listarU-edit-icon {
     width: 20px; 
     height: 20px; 
     transition: transform 0.3s;
 }
 
 /*botão de excluir */
-.delete-btn {
+.listarU-delete-btn {
     background-color: transparent;
     border: none;
     padding: 5px 10px;
@@ -79,17 +80,17 @@ table th, table td {
     justify-content: flex-start; 
     gap: 8px;
 }
-.delete-icon {
+.listarU-delete-icon {
     width: 20px;
     height: 20px; 
     transition: transform 0.3s; 
 }
 
 
-.edit-icon:hover {
+.listarU-edit-icon:hover {
     transform: scale(1.2);
 }
-.delete-icon:hover {
+.listarU-delete-icon:hover {
     transform: scale(1.2); 
 }
 
@@ -99,7 +100,7 @@ tr:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .listarU-container {
         margin-left: 0; 
         overflow-x: auto;
     }

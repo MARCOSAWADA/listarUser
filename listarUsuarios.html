@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAR USUÁRIOS</title>
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/search2.css">
+    <link rel="stylesheet" href="css/search.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/tabela.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,28 +16,29 @@
 
 <body>
     <header>
-        <div class="logo">
+        <div class="listarU-logo">
             <img src="./assets/Ativo 2.png" alt="logo tweeb">
         </div> 
     </header>
 
     <!-- Barra de departamentos -->
-    <section class="departments-bar">
-        <div class="department">
+    <section class="listarU-departments-bar">
+        <div class="listarU-department">
         </div>
     </section>    
 
     <section>
-        <h3>CLIENTES CADASTRADOS</h3>
+        <div class="listarU-titulo"> <h3>CLIENTES CADASTRADOS</h3>
+        </div>
 
 
-        <div class="search-box">
+        <div class="listarU-search-box">
             <form action="" onsubmit="event.preventDefault(); filterTable();">
-                <div class="search-container">
-                    <button type="submit" class="search-btn">
+                <div class="listarU-search-container">
+                    <button type="submit" class="listarU-search-btn">
                         <i class="bx bx-search"></i> <!-- Ícone da lupa -->
                     </button>
-                    <input type="text" id="searchInput" class="srch" placeholder="Buscar">
+                    <input type="text" id="searchInput" class="listarU-srch" placeholder="Buscar">
                 </div>
             </form>
         </div>
@@ -45,7 +46,7 @@
         
 
         <!-- Tabela para listar clientes cadastrados -->
-    <div class="container">    
+    <div class="listarU-container">    
         <table>
             <thead>
                 <tr>
@@ -72,11 +73,11 @@
                     <td>Centro</td>
                     <td>SP</td>
                     <td>
-                        <button class="edit-btn">
-                            <img src="./assets/edit-3.png" alt="Editar" class="edit-icon">
+                        <button class="listarU-edit-btn">
+                            <img src="./assets/edit-3.png" alt="Editar" class="listarU-edit-icon">
                         </button>
-                        <button class="delete-btn">
-                            <img src="./assets/trash-2.png" alt="Excluir" class="delete-icon">
+                        <button class="listarU-delete-btn">
+                            <img src="./assets/trash-2.png" alt="Excluir" class="listarU-delete-icon">
                         </button>
                     </td>
                 </tr>
@@ -90,11 +91,11 @@
                     <td>Jardim</td>
                     <td>RJ</td>
                     <td>
-                        <button class="edit-btn">
-                            <img src="edit-3.png" alt="Editar" class="edit-icon">
+                        <button class="listarU-edit-btn">
+                            <img src="./assets/edit-3.png" alt="Editar" class="listarU-edit-icon">
                         </button>
-                        <button class="delete-btn">
-                            <img src="trash-2.png" alt="Excluir" class="delete-icon">
+                        <button class="listarU-delete-btn">
+                            <img src="./assets/trash-2.png" alt="Excluir" class="listarU-delete-icon">
                         </button>
                     </td>
                 </tr>
